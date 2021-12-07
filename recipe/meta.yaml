@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - hiclass = hiclass.__main__:main
   script: "{{ PYTHON }} -m pip install . -vv"
@@ -50,5 +50,4 @@ about:
 
 extra:
   recipe-maintainers:
-    # GitHub IDs for maintainers of the recipe.
     - mirand863
