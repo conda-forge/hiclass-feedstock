@@ -18,13 +18,15 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.8,<3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.8,<3.9
     - networkx
     - numpy
     - scikit-learn
+    - pip:
+        - ray==1.11.0
 
 test:
   imports:
