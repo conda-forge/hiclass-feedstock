@@ -1,7 +1,7 @@
 About hiclass
 =============
 
-Home: https://gitlab.com/dacs-hpi/hiclass
+Home: https://github.com/mirand863/hiclass
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hiclass-feedsto
 
 Summary: Hierarchical Classification Library
 
-Development: https://gitlab.com/dacs-hpi/hiclass
+Development: https://github.com/mirand863/hiclass
 
 Documentation: https://hiclass.readthedocs.io/
 
