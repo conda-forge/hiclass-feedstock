@@ -36,7 +36,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/mirand863/hiclass
+  home: https://github.com/scikit-learn-contrib/hiclass
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
@@ -47,7 +47,7 @@ about:
     for speed. It is pure python code compatible with
     Python 3.8+ and requires networkx, numpy and scikit-learn.
   doc_url: https://hiclass.readthedocs.io/
-  dev_url: https://github.com/mirand863/hiclass
+  dev_url: https://github.com/scikit-learn-contrib/hiclass
 
 extra:
   recipe-maintainers:
