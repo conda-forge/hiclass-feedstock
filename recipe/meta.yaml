@@ -1,5 +1,5 @@
 {% set name = "hiclass" %}
-{% set version = "4.2.7" %}
+{% set version = "4.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 85c01cf9493651ad2a6ef879e4f0bae2e7368650dd90c8631cdd68b9cf028095
+  sha256: 2f31cdc353aa06e2ae77188661be285cf39cd7c3b0c83e7ff2482d8d66afa543
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.7,<3.9
     - networkx
-    - numpy
+    - numpy <1.24
     - scikit-learn
     - ray-core
 
