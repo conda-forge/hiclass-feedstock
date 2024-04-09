@@ -1,5 +1,5 @@
 {% set name = "hiclass" %}
-{% set version = "4.8.1" %}
+{% set version = "4.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 06388d8fec0b4b57d49e3140584ef6c39bc4229df4d13f10705a2f8b96bf0d89
+  sha256: 57d2c60946db12cd5f38b11a70088781a4aad4769d5933321d802d0d4337d6e5
 
 build:
   noarch: python
