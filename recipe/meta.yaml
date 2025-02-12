@@ -27,6 +27,7 @@ requirements:
     - numpy
     - scikit-learn <1.5
     - ray-core
+    - scipy <1.13
 
 test:
   imports:
