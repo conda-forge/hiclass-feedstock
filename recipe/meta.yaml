@@ -11,27 +11,30 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - hiclass = hiclass.__main__:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7,<3.9
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.7,<3.9
+    - python >={{ python_min }},<3.13
     - networkx
-    - numpy <1.24
-    - scikit-learn
+    - numpy
+    - scikit-learn <1.5
     - ray-core
+    - scipy <1.13
 
 test:
   imports:
     - hiclass
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
