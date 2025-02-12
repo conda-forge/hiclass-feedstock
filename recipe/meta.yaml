@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.13
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.9,<3.13
+    - python >={{ python_min }},<3.13
     - networkx
     - numpy
-    - scikit-learn
+    - scikit-learn<1.5
     - ray-core
 
 test:
@@ -32,6 +32,7 @@ test:
     - hiclass
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
