@@ -25,9 +25,9 @@ requirements:
     - python >={{ python_min }},<3.13
     - networkx
     - numpy
-    - scikit-learn <1.5
+    - scikit-learn >=1.5
     - ray-core
-    - scipy <1.13
+    - scipy
 
 test:
   imports:
