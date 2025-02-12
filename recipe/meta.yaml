@@ -20,11 +20,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }},<3.13
     - networkx
     - numpy
-    - scikit-learn<1.5
+    - scikit-learn <1.5
     - ray-core
 
 test:
